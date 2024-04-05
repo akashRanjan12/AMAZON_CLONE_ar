@@ -11,6 +11,11 @@ body {
   background-color: rgb(225, 224, 220);
 }
 /* -------------------------------------------- */
+navbar1 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 .navbar1 {
   width: 100%;
   height: 60px;
@@ -197,6 +202,7 @@ li:hover {
   top: 47px;
   right: 1010px;
   display: none;
+  z-index: 1;
 }
 
 /* ------------------------------------------ */
@@ -685,4 +691,82 @@ li:hover {
   bottom: -690px;
   cursor: pointer;
   right: 0;
+}
+/* footer----------------------------------------------- */
+.f-container-01 {
+  height: auto;
+  #foot-msg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border: 1px rgba(128, 128, 128, 0.855) solid;
+    border-radius: 5px;
+    font-size: 1.4em;
+    background-color: white;
+  }
+  .fa-angle-right {
+    color: black;
+  }
+  #back-to-top-btn {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #37475a;
+    color: white;
+  }
+}
+.f-container-02 {
+  background-color: #232f3e;
+  color: white;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.inside-f-con-02-1 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  line-height: 30px;
+  padding-bottom: 40px;
+}
+#font-blacl {
+  color: white;
+  font-size: 1.2em;
+}
+#font {
+  font-size: 1.3em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+ul {
+  line-height: 25px;
+  li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+  }
+}
+#f-box-02-01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 20px;
+}
+#f-box-02-02 {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
