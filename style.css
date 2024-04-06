@@ -48,6 +48,10 @@ navbar1 {
   padding: 6px;
   color: black;
   cursor: pointer;
+  width: max-content;
+}
+.add {
+  width: max-content;
 }
 .boxes3 {
   background-color: rgb(231, 163, 37);
@@ -110,6 +114,7 @@ navbar1 {
     opacity: 0.9;
   }
 }
+
 .acc:hover {
   .acc-list-div {
     display: block;
@@ -211,15 +216,16 @@ li:hover {
   height: 33px;
   color: white;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
-  font-size: 0.98em;
+  font-size: 0.8em;
   padding-left: 10px;
+  /* width: max-content; */
 }
 .box-nav2 {
   padding: 2px;
   height: 31px;
-  width: fit-content;
+  width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,14 +246,15 @@ li:hover {
   padding: 8px;
   display: none;
   color: black;
-  font-size: 0.9em;
+  font-size: 1.3em;
+  z-index: 1;
 }
 
 .tooltip-browse::before {
   content: "";
   position: absolute;
   top: -15px;
-  right: 850px;
+  right: 990px;
   border-width: 8px;
   border-style: solid;
   border-color: transparent transparent #ffffff transparent;
@@ -274,11 +281,12 @@ li:hover {
   background-color: rgb(255, 255, 255);
   position: absolute;
   top: 90px;
-  right: 260px;
+  right: 500px;
   padding: 8px;
   display: none;
   color: black;
-  font-size: 0.9em;
+  font-size: 1.1em;
+  z-index: 1;
 }
 
 .tooltip-prime::before {
@@ -356,8 +364,8 @@ li:hover {
   height: 100%;
   width: 100%;
   background-size: cover;
-  background-clip: border-box;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .slider-image::after {
   content: "";
@@ -375,11 +383,9 @@ li:hover {
 #img0 {
   height: 610px;
 }
-/* slide controler */
 .controler {
   height: 220px;
   width: 60px;
-  /* background-color: rgb(255, 255, 255, 0.5); */
   font-size: 2em;
   color: rgb(0, 0, 0, 0.9);
   display: flex;
@@ -405,7 +411,7 @@ li:hover {
   display: flex;
   width: 100%;
   position: absolute;
-  top: 380px;
+  top: 360px;
   justify-content: center;
   gap: 10px;
   padding-left: 10px;
@@ -505,7 +511,6 @@ li:hover {
   width: 100%;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
-  /* padding: 10px; */
 }
 .slide-02,
 .slide-03 {
@@ -514,7 +519,6 @@ li:hover {
   display: flex;
   gap: 20px;
   align-items: center;
-  /* padding-left: 10px; */
   padding-right: 10px;
   transition: transform 0.3s ease-in;
 }
@@ -742,7 +746,7 @@ li:hover {
   font-size: 1.2em;
 }
 #font {
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -764,9 +768,89 @@ ul {
 #f-box-02-02 {
   display: flex;
   flex-wrap: wrap;
-
+  font-size: 0.9em;
   height: auto;
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.f-container-03 {
+  height: auto;
+  width: 100%;
+  background-color: #131a22;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #f-data-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 70px;
+  }
+  #f-end-data {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    word-spacing: 4px;
+    padding: 10px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+#opacity {
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+#f-data-list-01,
+#f-data-list-02 {
+  column-count: 2;
+  /* line-height: 30px; */
+  gap: 80px;
+}
+@media (max-width: 1282px) {
+  .acc {
+    display: none;
+  }
+  .return-order {
+    display: none;
+  }
+  .box-04-container {
+    display: none;
+  }
+}
+@media (max-width: 1120px) {
+  .four-box-container {
+    display: none;
+  }
+  .fixing {
+    display: none;
+  }
+  .slider-image::after {
+    display: none;
+  }
+  .controler02,
+  .controler03 {
+    display: none;
+  }
+
+  .slider-container-02,
+  .slider-container-03 {
+    overflow: scroll;
+  }
+}
+@media (max-width: 400px) {
+  #f-data-list-01,
+  #f-data-list-02 {
+    display: none;
+  }
 }
